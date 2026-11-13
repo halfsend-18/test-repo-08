@@ -18,9 +18,13 @@ roles:
     - fix
     - retro
     - prioritize
+agents:
+    - name: url-ping
+      source: https://raw.githubusercontent.com/halfsend-18/test-repo-08-url-harness-host/main/harness/url-ping.yaml#sha256=c461b31687d64b92429e4c340fab4960d883720b85233a39ca719d9a640e42fb
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
     - https://raw.githubusercontent.com/fullsend-ai/agents/
+    - https://raw.githubusercontent.com/halfsend-18/test-repo-08-url-harness-host/
 mint_url: https://bt-695de36e-bt-mint.fullsend-ai.workers.dev
 inference:
     project: it-gcp-konflux-e2e-fullsend
